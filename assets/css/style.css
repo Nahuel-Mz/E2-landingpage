@@ -50,4 +50,84 @@ ul a {
   margin: -10px 30px;
 }
 
-/* nth-chill*/
+/* section hero*/
+
+.hero {
+  width: 100%;
+  background-color: #0f2027;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 90px; */
+  padding: 50px 0px;
+}
+
+.img {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 16px;
+  background-image: url(../img/cafe.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.hero_info {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero_info p {
+  width: 80%;
+  color: #b0bdd7;
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: 100px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+/* section about */
+
+.about {
+  background-color: #0f2027;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+}
+
+.about h2 {
+  color: white;
+  font-size: 1.9rem;
+  text-decoration: underline;
+}
+
+.about p {
+  color: white;
+  width: 40%;
+  line-height: 30px;
+  color: #b0bdd7;
+  font-size: 1.3rem;
+  text-align: center;
+}
