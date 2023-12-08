@@ -34,7 +34,7 @@ ul {
   justify-content: center;
   gap: 14px;
   list-style-type: none;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -51,6 +51,11 @@ ul a {
 }
 
 /* section hero*/
+
+main {
+  background-color: #0f2027;
+  height: 100vh;
+}
 
 .hero {
   width: 100%;
@@ -107,8 +112,8 @@ ul a {
 /* section about */
 
 .about {
+  width: 100%;
   background-color: #0f2027;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
