@@ -112,27 +112,62 @@ main {
 /* section about */
 
 .about {
-  width: 100%;
-  background-color: #0f2027;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  gap: 30px;
+  padding: 60px 0px;
+}
+
+.about_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: 100%;
+}
+
+.about_info p {
+  width: 90%;
+  color: #b0bdd7;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.img_info {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 16px;
+  background-image: url(../img/mesero\ uno.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .dos {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 16px;
+  background-image: url(../img/mesero\ dos.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+#info_ns {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
 }
 
 .about h2 {
   color: white;
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-decoration: underline;
-}
-
-.about p {
-  color: white;
-  width: 40%;
-  line-height: 30px;
-  color: #b0bdd7;
-  font-size: 1.3rem;
-  text-align: center;
 }
