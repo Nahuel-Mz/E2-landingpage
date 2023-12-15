@@ -9,7 +9,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "bebas neue";
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header {
@@ -79,6 +79,7 @@ main {
   border-radius: 10px;
   max-width: 100%;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .img {
@@ -271,7 +272,7 @@ main {
   /* max-width: 100%; */
   justify-content: space-around;
   border-radius: 10px;
-  padding: 50px;
+  padding: 30px 50px;
 }
 
 .info_contact {
