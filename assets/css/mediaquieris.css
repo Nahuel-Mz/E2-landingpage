@@ -69,3 +69,50 @@
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .hero_card_container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_info h1 {
+    width: 100%;
+  }
+
+  .hero_info p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .about_info {
+    text-align: center;
+  }
+
+  #info_ns p {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .container_contact {
+    width: 100%;
+  }
+  .date_contact p {
+    font-size: 25px;
+  }
+
+  .map_date {
+    align-items: center;
+  }
+
+  .email_date {
+    align-items: center;
+  }
+
+  .phone_date {
+    align-items: center;
+  }
+}
