@@ -9,25 +9,29 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "bebas neue";
+  border: 1px solid red;
 }
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--bgColor);
-  height: 10vh;
-  padding: 1rem;
-} */
-
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--bgColor);
-  /* height: 10vh; */
-  /* width: 100%; */
-  padding: 1.3rem;
+  height: 65px;
+  width: 100%;
+  padding: 1rem;
 }
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgColor);
+  height: 10vh;
+  max-width: 100%;
+  padding: 1.3rem;
+  display: none;
+} */
 
 ul {
   display: flex;
@@ -46,15 +50,15 @@ ul a {
 /* img */
 
 .logo-cafe {
-  height: 80px;
-  margin: -10px 30px;
+  height: 60px;
+  /* margin: -10px 30px; */
 }
 
 /* section hero*/
 
 main {
   background-color: #0f2027;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .hero {
@@ -68,10 +72,19 @@ main {
   padding: 50px 0px;
 }
 
+.hero_card_container {
+  display: flex;
+  background-color: #fdeecd;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
 .img {
   height: 300px;
   width: 300px;
-  background-color: gray;
+  /* background-color: gray; */
   border-radius: 16px;
   background-image: url(../img/cafe.avif);
   background-position: center;
@@ -80,7 +93,7 @@ main {
 }
 
 .hero h1 {
-  color: white;
+  color: #010d23;
   font-weight: 800;
   font-size: 2.4rem;
 }
@@ -94,7 +107,7 @@ main {
 
 .hero_info p {
   width: 80%;
-  color: #b0bdd7;
+  color: #7b7c7e;
   font-size: 1.2rem;
 }
 
@@ -102,10 +115,10 @@ main {
   width: 100px;
   padding: 15px 30px;
   border-radius: 10px;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   outline: none;
   background-color: transparent;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
@@ -125,11 +138,14 @@ main {
   align-items: center;
   gap: 25px;
   max-width: 100%;
+  padding: 40px;
+  background-color: #fdeecd;
+  border-radius: 10px;
 }
 
 .about_info p {
   width: 90%;
-  color: #b0bdd7;
+  color: #010d23;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -167,7 +183,157 @@ main {
 }
 
 .about h2 {
-  color: white;
+  color: #010d23;
   font-size: 2rem;
   text-decoration: underline;
+}
+
+/* products */
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f2027;
+  gap: 30px;
+}
+
+.products_tittle {
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+
+.card_container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 0px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fdeecd;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+}
+
+.info_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_card span {
+  background-color: #3a89c9;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.info_card p {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* contact seccion */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  background-color: #0f2027;
+  padding: 50px 40px;
+}
+
+#contact_tittle {
+  /* text-align: center; */
+  font-size: 25px;
+}
+
+.container_contact {
+  display: flex;
+  background-color: #fdeecd;
+  align-items: center;
+  max-width: 1300px;
+  /* max-width: 100%; */
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.info_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.date_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.map_date {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.email_date {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.phone_date {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.map_iframe {
+  margin: 20px;
+}
+
+.map_iframe iframe {
+  max-width: 100%;
+  /* height: 300px; */
+}
+
+/* footer diseño */
+
+footer {
+  height: 75px;
+  background-color: #010d23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_redes {
+  color: #b0bdd7;
+  display: flex;
+  gap: 40px;
+  /* margin: 20px; */
+  padding: 10px;
+  font-size: 30px;
+}
+
+.copy {
+  color: #b0bdd7;
+  font-size: 20px;
 }
