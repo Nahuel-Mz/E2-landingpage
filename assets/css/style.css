@@ -22,16 +22,22 @@ header {
   padding: 1rem;
 }
 
-/* nav {
+nav {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
-  background-color: var(--bgColor);
-  height: 10vh;
-  max-width: 100%;
-  padding: 1.3rem;
+  justify-content: center;
+}
+
+.hamburguesa {
   display: none;
-} */
+  font-size: 33px;
+  color: #ffffff;
+}
+
+#toggle_menu {
+  display: none;
+}
 
 ul {
   display: flex;
@@ -62,6 +68,7 @@ main {
 }
 
 .hero {
+  /* min-width: 1000px; */
   width: 100%;
   background-color: #0f2027;
   /* text-align: center; */
@@ -175,10 +182,11 @@ main {
 } */
 
 #info_ns {
-  width: 900px;
+  max-width: 100%;
+  width: 1000px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
 }
@@ -268,7 +276,8 @@ main {
   display: flex;
   background-color: #fdeecd;
   align-items: center;
-  max-width: 1300px;
+  min-width: auto;
+  width: 1200px;
   /* max-width: 100%; */
   justify-content: space-around;
   border-radius: 10px;

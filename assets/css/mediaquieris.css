@@ -1,0 +1,71 @@
+@media (max-width: 992px) {
+  .hero_card_container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero_info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .list_items {
+    position: absolute;
+    top: 65px;
+    left: 0%;
+    right: 50%;
+    flex-direction: column;
+    background-color: #fdeecd;
+    padding: 30px;
+    text-align: center;
+    display: none;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .list_items a {
+    color: black;
+    font-size: 25px;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+
+  #toggle_menu:checked + .list_items {
+    display: flex;
+  }
+
+  .about_info {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .about_info p {
+    width: 70%;
+    text-align: center;
+  }
+
+  .img_info {
+    display: none;
+  }
+
+  .info_ns {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .map_iframe {
+    display: none;
+  }
+
+  .container_contact {
+    text-align: center;
+  }
+}
